@@ -1,0 +1,32 @@
+#Crear una clase llamada Calculadora con una cantidad modificable de atributos que
+#permitan ingresar números y que tenga métodos para sumar, multiplicar, dividir y
+#sacar el promedio, especificando que la cantidad de números a operar se define al
+#crear un objeto de la clase Calculadora
+class Calculadora:
+    def __init__(self):
+        self.num=int(input("ingrese el numero"))
+        self.num2=int(input("ingrese el numero"))
+        self.suma=(self.num+self.num2)
+        self.resta=(self.num-self.num2)
+        self.division=(self.num/self.num2)
+        self.multiplicacion=(self.num*self.num2)
+
+    def operacion(self):
+        menu='''
+        1)suma
+        2)resta
+        3)division
+        4)multiplicación
+        '''
+        print(menu)
+        op=int(input("Elige la opción"))
+        if op is 1:
+            print(self.suma)
+        elif op is 2:
+            print(self.resta)
+        elif op is 3:
+            print(division)
+        elif op is 4:
+            print(multiplicacion)
+usuario=Calculadora()
+usuario.operacion()
